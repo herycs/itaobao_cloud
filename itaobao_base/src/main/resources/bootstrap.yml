@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: base
+      profile: dev
+      label: master
+      uri: http://122.51.8.208:12000

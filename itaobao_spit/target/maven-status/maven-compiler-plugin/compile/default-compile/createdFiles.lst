@@ -1,0 +1,5 @@
+com\itaobao\mongo\pojo\Spit.class
+com\itaobao\mongo\dao\SpitDao.class
+com\itaobao\mongo\MongoApplication.class
+com\itaobao\mongo\controller\SpitController.class
+com\itaobao\mongo\service\SpitService.class

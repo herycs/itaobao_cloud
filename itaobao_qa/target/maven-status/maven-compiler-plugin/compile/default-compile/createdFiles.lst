@@ -1,0 +1,16 @@
+com\itaobao\qa\controller\ProblemController.class
+com\itaobao\qa\client\impl\BaseClientImpl.class
+com\itaobao\qa\client\BaseClient.class
+com\itaobao\qa\pojo\Problem.class
+com\itaobao\qa\service\ReplyService.class
+com\itaobao\qa\dao\ReplyDao.class
+com\itaobao\qa\service\ProblemService.class
+com\itaobao\qa\service\ProblemService$1.class
+com\itaobao\qa\config\InterceptorConfig.class
+com\itaobao\qa\controller\BaseExceptionHandler.class
+com\itaobao\qa\controller\ReplyController.class
+com\itaobao\qa\QaApplication.class
+com\itaobao\qa\dao\ProblemDao.class
+com\itaobao\qa\interceptor\JwtInterceptor.class
+com\itaobao\qa\service\ReplyService$1.class
+com\itaobao\qa\pojo\Reply.class

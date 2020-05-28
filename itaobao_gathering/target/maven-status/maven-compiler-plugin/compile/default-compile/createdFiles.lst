@@ -1,0 +1,7 @@
+com\itaobao\gathering\controller\GatheringController.class
+com\itaobao\gathering\GatheringApplication.class
+com\itaobao\gathering\service\GatheringService.class
+com\itaobao\gathering\dao\GatheringDao.class
+com\itaobao\gathering\pojo\Gathering.class
+com\itaobao\gathering\controller\BaseExceptionHandler.class
+com\itaobao\gathering\service\GatheringService$1.class

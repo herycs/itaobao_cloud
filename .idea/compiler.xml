@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itaobao_spit" />
+        <module name="itaobao_rabbitmqtest" />
+        <module name="itaobao_sms" />
+        <module name="itaobao_user" />
+        <module name="itaobao_eureka" />
+        <module name="itaobao_config" />
+        <module name="itaobao_base" />
+        <module name="itaobao_friend" />
+        <module name="itaobao_gathering" />
+        <module name="itaobao_common" />
+        <module name="itaobao_web" />
+        <module name="itaobao_search" />
+        <module name="itaobao_article" />
+        <module name="itaobao_qa" />
+        <module name="itaobao_recruit" />
+        <module name="itaobao_manager" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="itaobao_article" options="-parameters" />
+      <module name="itaobao_base" options="-parameters" />
+      <module name="itaobao_common" options="-parameters" />
+      <module name="itaobao_config" options="-parameters" />
+      <module name="itaobao_eureka" options="-parameters" />
+      <module name="itaobao_friend" options="-parameters" />
+      <module name="itaobao_gathering" options="-parameters" />
+      <module name="itaobao_manager" options="-parameters" />
+      <module name="itaobao_qa" options="-parameters" />
+      <module name="itaobao_rabbitmqtest" options="-parameters" />
+      <module name="itaobao_recruit" options="-parameters" />
+      <module name="itaobao_search" options="-parameters" />
+      <module name="itaobao_sms" options="-parameters" />
+      <module name="itaobao_spit" options="-parameters" />
+      <module name="itaobao_user" options="-parameters" />
+      <module name="itaobao_web" options="-parameters" />
+    </option>
+  </component>
+</project>

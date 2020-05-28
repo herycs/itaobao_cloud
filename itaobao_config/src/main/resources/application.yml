@@ -1,0 +1,17 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: itaobao-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/anglek/itaobaob.git
+  rabbitmq:
+    host: 122.51.8.208
+management:
+  endpoint:
+    web:
+      exposure:
+        include: bus-refresh

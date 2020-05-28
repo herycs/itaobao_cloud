@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_article" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_article/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_article/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_base/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_friend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_friend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_friend/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_gathering" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_gathering/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_gathering/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_manager/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_qa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_qa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_qa/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_rabbitmqtest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_rabbitmqtest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_rabbitmqtest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_recruit" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_recruit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_recruit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_search/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_search/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_sms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_sms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_sms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_spit" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_spit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_spit/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_user/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itaobao_web/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

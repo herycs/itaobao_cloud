@@ -1,0 +1,17 @@
+com\itaobao\article\service\ArticleService$1.class
+com\itaobao\article\dao\ChannelDao.class
+com\itaobao\article\pojo\Article.class
+com\itaobao\article\service\ChannelService.class
+com\itaobao\article\controller\ColumnController.class
+com\itaobao\article\dao\ArticleDao.class
+com\itaobao\article\dao\ColumnDao.class
+com\itaobao\article\controller\ChannelController.class
+com\itaobao\article\service\ColumnService.class
+com\itaobao\article\service\ColumnService$1.class
+com\itaobao\article\controller\ArticleController.class
+com\itaobao\article\service\ChannelService$1.class
+com\itaobao\article\service\ArticleService.class
+com\itaobao\article\controller\BaseExceptionHandler.class
+com\itaobao\article\pojo\Channel.class
+com\itaobao\article\pojo\Column.class
+com\itaobao\article\ArticleApplication.class

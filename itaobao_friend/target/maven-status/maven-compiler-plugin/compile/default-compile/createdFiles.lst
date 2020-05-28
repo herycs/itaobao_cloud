@@ -1,0 +1,10 @@
+com\itaobao\friend\controller\FriendController.class
+com\itaobao\friend\dao\FriendDao.class
+com\itaobao\friend\FriendApplication.class
+com\itaobao\friend\pojo\NoFriend.class
+com\itaobao\friend\client\UserClient.class
+com\itaobao\friend\interceptor\JwtInterceptor.class
+com\itaobao\friend\config\InterceptorConfig.class
+com\itaobao\friend\dao\NoFriendDao.class
+com\itaobao\friend\pojo\Friend.class
+com\itaobao\friend\service\FriendService.class

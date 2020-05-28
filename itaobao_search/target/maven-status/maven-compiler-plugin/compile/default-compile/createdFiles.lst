@@ -1,0 +1,5 @@
+com\itaobao\search\controller\ArticleController.class
+com\itaobao\search\dao\ArticleDao.class
+com\itaobao\search\service\ArticleService.class
+com\itaobao\search\pojo\Article.class
+com\itaobao\search\SearchApplication.class
