@@ -16,7 +16,10 @@ public class BaseExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public Result error(Exception e){
-        e.printStackTrace();        
+        e.printStackTrace();
+        if (e.getMessage().equals("No value present")){
+            return new Result(true, StatusCode.ERROR, "目标值不存在");
+        }
         return new Result(false, StatusCode.ERROR, "执行出错");
     }
 }

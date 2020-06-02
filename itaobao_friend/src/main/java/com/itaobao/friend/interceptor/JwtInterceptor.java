@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @Component
 public class JwtInterceptor implements HandlerInterceptor{
+
     @Autowired
     private JwtUtil jwtUtil;
 

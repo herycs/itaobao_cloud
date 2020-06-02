@@ -6,7 +6,7 @@ import org.springframework.data.elasticsearch.annotations.Field;
 
 import java.io.Serializable;
 
-@Document(indexName = "tensquare_article", type = "article")
+@Document(indexName = "itaobao_article", type = "article")
 public class Article implements Serializable {
 
     @Id

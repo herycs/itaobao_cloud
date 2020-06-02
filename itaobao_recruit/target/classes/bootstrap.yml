@@ -1,7 +1,0 @@
-spring:
-  cloud:
-    config:
-      name: recuit
-      profile: dev
-      label: master
-      uri: http://192.168.217.136:12000

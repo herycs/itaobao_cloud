@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Component
-@FeignClient("tensquare-user")
+@FeignClient("itaobao-user")
 public interface UserClient {
 
     @RequestMapping(value = "/user/{userid}/{friendid}/{x}", method = RequestMethod.PUT)

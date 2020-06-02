@@ -1,4 +1,5 @@
 package com.itaobao.sms.utils;
+
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.IAcsClient;
 import com.aliyuncs.dysmsapi.model.v20170525.QuerySendDetailsRequest;
@@ -22,7 +23,6 @@ import java.util.Date;
 @Component
 public class SmsUtil {
 
-    //产品名称:云通信短信API产品,开发者无需替换
     static final String product = "Dysmsapi";
     //产品域名,开发者无需替换
     static final String domain = "dysmsapi.aliyuncs.com";
@@ -30,7 +30,7 @@ public class SmsUtil {
     @Autowired
     private Environment env;
 
-    // TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
+
 
     /**
      * 发送短信
@@ -41,8 +41,8 @@ public class SmsUtil {
      * @return
      * @throws ClientException
      */
-    public SendSmsResponse sendSms(String mobile,String template_code,String sign_name,String param) throws ClientException {
-        String accessKeyId =env.getProperty("aliyun.sms.accessKeyId");
+    public SendSmsResponse sendSms(String mobile, String template_code, String sign_name, String param) throws ClientException {
+        String accessKeyId = env.getProperty("aliyun.sms.accessKeyId");
         String accessKeySecret = env.getProperty("aliyun.sms.accessKeySecret");
         //可自助调整超时时间
         System.setProperty("sun.net.client.defaultConnectTimeout", "10000");
@@ -70,7 +70,7 @@ public class SmsUtil {
         return sendSmsResponse;
     }
 
-    public  QuerySendDetailsResponse querySendDetails(String mobile,String bizId) throws ClientException {
+    public QuerySendDetailsResponse querySendDetails(String mobile, String bizId) throws ClientException {
         String accessKeyId =env.getProperty("accessKeyId");
         String accessKeySecret = env.getProperty("accessKeySecret");
         //可自助调整超时时间
@@ -97,4 +97,5 @@ public class SmsUtil {
         QuerySendDetailsResponse querySendDetailsResponse = acsClient.getAcsResponse(request);
         return querySendDetailsResponse;
     }
+
 }

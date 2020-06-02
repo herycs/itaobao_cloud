@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="itaobao_spit" />
-        <module name="itaobao_rabbitmqtest" />
+        <module name="itaobao_eureka" />
         <module name="itaobao_sms" />
         <module name="itaobao_user" />
-        <module name="itaobao_eureka" />
-        <module name="itaobao_config" />
         <module name="itaobao_base" />
+        <module name="itaobao_config" />
+        <module name="test" />
         <module name="itaobao_friend" />
         <module name="itaobao_gathering" />
         <module name="itaobao_common" />
@@ -24,6 +24,10 @@
         <module name="itaobao_manager" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="itaobao_rabbitmqtest" target="1.8" />
+      <module name="test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -43,6 +47,7 @@
       <module name="itaobao_spit" options="-parameters" />
       <module name="itaobao_user" options="-parameters" />
       <module name="itaobao_web" options="-parameters" />
+      <module name="test" options="-parameters" />
     </option>
   </component>
 </project>

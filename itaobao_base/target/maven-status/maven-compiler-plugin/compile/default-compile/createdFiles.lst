@@ -1,8 +1,0 @@
-com\itaobao\base\BaseApplication.class
-com\itaobao\base\service\LabelService.class
-com\itaobao\base\dao\LabelDao.class
-com\itaobao\base\pojo\Label.class
-com\itaobao\base\service\LabelService$2.class
-com\itaobao\base\controller\LabelController.class
-com\itaobao\base\controller\LabelExceptionHandler.class
-com\itaobao\base\service\LabelService$1.class

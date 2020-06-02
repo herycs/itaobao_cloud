@@ -5,6 +5,7 @@ import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.domain.Page;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,7 @@ import java.util.Map;
  */
 @RestController
 @CrossOrigin
+@RefreshScope
 @RequestMapping("/user")
 public class UserController {
 
@@ -29,7 +31,6 @@ public class UserController {
 	@Autowired
 	private JwtUtil jwtUtil;
 
-
 	/**
 	 * 更新好友粉丝数和用户关注数
 	 * @return
@@ -39,9 +40,14 @@ public class UserController {
 		userService.updatefanscountandfollowcount(x, userid, friendid);
 	}
 
+	/**
+	 * 登录
+	 * */
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public Result login(@RequestBody User user){
+
 		user = userService.login(user.getMobile(), user.getPassword());
+
 		if(user==null){
 			return new Result(false, StatusCode.LOGINERROR, "登录失败");
 		}

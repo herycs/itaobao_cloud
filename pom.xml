@@ -16,7 +16,6 @@
         <module>itaobao_gathering</module>
         <module>itaobao_spit</module>
         <module>itaobao_search</module>
-        <module>itaobao_rabbitmqtest</module>
         <module>itaobao_user</module>
         <module>itaobao_sms</module>
         <module>itaobao_eureka</module>

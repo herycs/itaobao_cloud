@@ -109,6 +109,7 @@ public class UserService {
 		user.setRegdate(new Date());//注册日期
 		user.setUpdatedate(new Date());//更新日期
 		user.setLastdate(new Date());//最后登陆日期
+
 		userDao.save(user);
 	}
 
@@ -197,7 +198,7 @@ public class UserService {
 		Map<String, String> map = new HashMap<>();
 		map.put("mobile", mobile);
 		map.put("checkcode", checkcode);
-		//rabbitTemplate.convertAndSend("sms", map);
+		rabbitTemplate.convertAndSend("sms", map);
 		//在控制台显示一份【方便测试】
 		System.out.println("验证码为："+checkcode);
 	}

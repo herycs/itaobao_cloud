@@ -6,6 +6,7 @@ import entity.Result;
 import entity.StatusCode;
 import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/friend")
+@RefreshScope
 public class FriendController {
 
     @Autowired
@@ -25,6 +27,7 @@ public class FriendController {
 
     @Autowired
     private UserClient userClient;
+
     /**
      * 添加好友或者添加非好友
      * @return
@@ -67,7 +70,7 @@ public class FriendController {
         }
     }
 
-    @RequestMapping(value = "/{friendid}", method = RequestMethod.DELETE)
+        @RequestMapping(value = "/{friendid}", method = RequestMethod.DELETE)
     public Result deleteFriend(@PathVariable String friendid){
         //验证是否登录，并且拿到当前登录的用户id
         Claims claims = (Claims) request.getAttribute("claims_user");
@@ -81,7 +84,4 @@ public class FriendController {
         userClient.updatefanscountandfollowcount(userid, friendid, -1);
         return new Result(true, StatusCode.OK, "删除成功");
     }
-
-
-
 }

@@ -23,8 +23,6 @@ public class LabelController {
     private LabelService labelService;
     @Autowired
     private HttpServletRequest request;
-//    @Value("${ip}")
-//    private String ip;
 
     @RequestMapping(method = RequestMethod.POST)
     public Result save(@RequestBody Label label){
@@ -34,7 +32,6 @@ public class LabelController {
 
     @RequestMapping(method = RequestMethod.GET)
     public Result findAll(){
-//        System.out.println("ip为："+ip);
         //获取头信息
         String header = request.getHeader("Authorization");
         System.out.println(header);
@@ -45,7 +42,6 @@ public class LabelController {
 
     @RequestMapping(value = "/{labelId}", method = RequestMethod.GET)
     public Result findById(@PathVariable("labelId") String id){
-        System.out.println("222222222222222");
         Label label = labelService.findById(id);
         return new Result(true,StatusCode.OK, "查询成功", label);
     }
