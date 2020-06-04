@@ -1,0 +1,19 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: itaobao-spit
+  data:
+    mongodb:
+      host: 122.51.8.208
+      database: spitdb
+  redis:
+    host: 122.51.8.208
+  rabbitmq:
+    host: 122.51.8.208
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-adress: ture

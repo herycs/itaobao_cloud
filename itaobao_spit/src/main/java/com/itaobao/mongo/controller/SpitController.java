@@ -5,10 +5,13 @@ import com.itaobao.mongo.service.SpitService;
 import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
+import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/spit")
@@ -19,6 +22,8 @@ public class SpitController {
     private SpitService spitService;
     @Autowired
     private RedisTemplate redisTemplate;
+    @Autowired
+    private HttpServletRequest request;
 
     @RequestMapping(method = RequestMethod.GET)
     public Result findAll(){
@@ -58,7 +63,12 @@ public class SpitController {
 
     @RequestMapping(value = "/thumbup/{spitId}", method = RequestMethod.PUT)
     public Result addthumbup(@PathVariable String spitId){
-        String userid = "11111";
+        Claims claims = (Claims) request.getAttribute("claims");
+        if(claims==null){
+            //说明当前用户没有user角色
+            return new Result(false, StatusCode.LOGINERROR, "权限不足");
+        }
+        String userid  = claims.getId();
         //先判断该用户是否已经点赞了。
         if(redisTemplate.opsForValue().get("spit_"+userid+"_"+spitId)!=null){
             return new Result(false, StatusCode.REPERROR, "不能重复点赞");

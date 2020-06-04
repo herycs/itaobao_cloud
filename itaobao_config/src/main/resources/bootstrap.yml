@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/anglek/itaobao_local.git
+          uri: https://gitee.com/anglek/ITIC.git
   rabbitmq:
     host: 122.51.8.208
 management: # 暴露总线地址

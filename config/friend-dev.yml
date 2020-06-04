@@ -1,0 +1,24 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: itaobao-friend
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://122.51.8.208:3306/itaobaob_friend?serverTimezone=UTC
+    username: root
+    password: 123456.sql
+  jpa:
+    database: MySQL
+    show-sql: true
+  rabbitmq:
+    host: 122.51.8.208
+jwt:
+  config:
+    key: itaobao
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-adress: ture

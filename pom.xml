@@ -23,6 +23,7 @@
         <module>itaobao_manager</module>
         <module>itaobao_web</module>
         <module>itaobao_config</module>
+        <module>itaobao_file</module>
     </modules>
     <packaging>pom</packaging>
 

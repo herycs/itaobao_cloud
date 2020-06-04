@@ -1,0 +1,19 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: itaobao-sms
+  rabbitmq:
+    host: 122.51.8.208
+aliyun:
+  sms:
+    accessKeyId: LTAI4GEfj8QsJ69EY4eWHhgU
+    accessKeySecret: 7IgCNEvw1G1khyKvaRnGmFK0qvUxvA
+    template_code: SMS_191801331
+    sign_name: IS商城
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-adress: ture

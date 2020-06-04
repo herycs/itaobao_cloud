@@ -1,0 +1,51 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: itaobao-web
+  rabbitmq:
+    host: 122.51.8.208
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-adress: ture
+zuul:
+  routes:
+    itaobao-base:
+      path: /base/**
+      serviceId: itaobao-base
+    itaobao-article:
+      path: /article/**
+      serviceId: itaobao-article
+    itaobao-friend:
+      path: /friend/**
+      serviceId: itaobao-friend
+    itaobao-gathering:
+      path: /gathing/**
+      serviceId: itaobao-gathering
+    itaobao-manager:
+      path: /manager/**
+      serviceId: itaobao-manager
+    itaobao-qa:
+      path: /qa/**
+      serviceId: itaobao-qa
+    itaobao-recruit:
+      path: /recruit/**
+      serviceId: itaobao-recruit
+    itaobao-search:
+      path: /search/**
+      serviceId: itaobao-search
+    taobao-sms:
+      path: /sms/**
+      serviceId: itaobao-sms
+    taobao-spit:
+      path: /spit/**
+      serviceId: itaobao-spit
+    taobao-user:
+      path: /user/**
+      serviceId: itaobao-user
+    taobao-web:
+      path: /web/**
+      serviceId: itaobao-web

@@ -10,5 +10,4 @@ import com.itaobao.gathering.pojo.Gathering;
  *
  */
 public interface GatheringDao extends JpaRepository<Gathering,String>,JpaSpecificationExecutor<Gathering>{
-	
 }

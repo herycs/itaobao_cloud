@@ -1,0 +1,21 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: itaobao-recruit
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://122.51.8.208:3306/itaobaob_recruit?serverTimezone=UTC
+    username: root
+    password: 123456.sql
+  jpa:
+    database: MySQL
+    show-sql: true
+  rabbitmq:
+    host: 122.51.8.208
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-adress: ture

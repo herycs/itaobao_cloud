@@ -1,0 +1,24 @@
+server:
+  port: 9010
+spring:
+  application:
+    name: itaobao-search
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9300
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://122.51.8.208:3306/itaobaob_search?serverTimezone=UTC
+    username: root
+    password: 123456.wyc
+  jpa:
+    database: MySQL
+    show-sql: true
+  rabbitmq:
+    host: 122.51.8.208
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    prefer-ip-adress: ture
